@@ -12,10 +12,12 @@
 # print(list)
 
 
+
 n = int (input('Введите N: '))
-
+list = [i for i in range(n)]
 x = 1
+for i in range(n):
+    x *= (i + 1)
+    list[i] = x
+print(list)
 
-
-list1 = [(i + x) * (x) for i in range(n)]
-print(list1)
